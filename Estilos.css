@@ -1,0 +1,125 @@
+/* Estilo de la pagina codigo .css */
+
+/* Estilo del cuerpo de la pagina*/
+body {
+    font-family: "Dosis", serif; /* tipo de fuente en el cuerpo de la pagina */
+    margin: 0;  /* Espaciado entre el borde y el elemento */
+    padding: 0; /* Relleno creado al rededor del contenido de un elemento*/
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #4CAF50; /* color de fondo del elemento */
+    color: white; /* color del texto */
+    padding: 5px 0; /* Relleno creado al rededor del contenido del titulo*/
+    text-align: center; /* Posicion del texto */
+    text-shadow: 0px 3px 1px #000000; /* sombreado al texto con las propiedades de posicion horizontal, posicion vertical, radio de extensión y color */
+    
+}
+
+/* Estilo de navegacion y listado */
+nav ul {
+    list-style-type: none;  /* Estilo de lista, elimina los puntos de la lista */
+    padding: 0; /* Relleno se encuentra en cero, eliminando relleno respecto al borde del contenido */
+}
+
+nav ul li {
+    display: inline; /* Muestra los valores de la lista alineados, uno al lado del otro */
+    font-size: 22px; /* Tamaño del texto de los valores del listado */
+    margin: 0 30px;  /* Espaciado entre cada valor del listado */
+}
+
+nav ul li a {
+    color: white; /* color del texto del listado */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+
+}
+
+/* Estilo del contenido */
+main {
+    padding: 50px; /* configura el relleno creado alrededor del contenido principal de la pagina */
+}
+
+/* Estilo de las secciones */
+section {
+    margin-bottom: 10px; /* espacio de la parte inferior de la siguiente seccion */
+    padding: 15px; /* configura el relleno dentro de la sección */
+    border: 5px solid #ccc; /* configura el borde o margen de la sección indicando grosor, tipo y color de parametro */
+    box-shadow: -5px 5px 5px #4d4d4d; /* sombra a la caja de seccion con las propiedades de posicion horizontal, posicion vertical, radio de extensión y color*/
+}
+
+/* Estilo del pie de pagina*/
+footer {
+    text-align: center; /* Alineacion del texto de pie de pagina */
+    padding: 20px 0; /* Configura el relleno en el pie de pagina */
+    background-color: #0000002d; /* Establece color de fondo en pie de página */
+    color: #ffffff; /* color del texto en pie de pagina */
+    text-shadow: 0px 1px 1px #000000; /* sombreado al texto con las propiedades de posicion horizontal, posicion vertical, radio de extensión y color */
+
+}
+
+
+p a {
+    color: rgb(255, 255, 255); /* color del texto */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+   text-align: center; /* Alineacion del texto */
+}
+
+/* Estilo de las imagenes*/
+img {
+    padding: 10px; /* Configura el relleno en el contenedor */
+    transition: transform 1s; /* Transición al transformar */
+    box-shadow: -5px 5px 5px #4d4d4d; /* sombra a la imagen con las propiedades de posicion horizontal, posicion vertical, radio de extensión y color*/
+}
+
+/* Estilo de las transiciones en imagenes*/
+img:hover {
+    transform: translateY(-20px); /* Efecto de elevación de imagen al pasar el mouse */
+}
+
+/* Estilo de las cajas estableciadas en columnas*/
+.columna:hover {
+    transform: translateY(-10px); /* Efecto de elevación de caja al pasar el mouse */
+}
+
+/* Estilo de las cajas estableciadas en columnas*/
+.columnas {
+    display: flex; /* organiza las columnas */
+    justify-content: space-between; /* Distribucion del espacio entre y alrededor de los items flex, a lo largo del eje principal de su contenedor */
+    margin-top: 30px; /* establece el margen superior de un elemento especificando una longitud o un porcentaje */
+}
+
+.columna {
+    flex: 1; /* Cada columna tomará el mismo espacio */
+    margin: 0 5px; /* Espacio entre columnas */
+    padding: 30px; /* Configura el relleno en el contenedor */
+    border: 1px solid #ccc; /* configura el borde o margen indicando grosor, tipo y color de parametro */
+    box-shadow: 1px 1px 5px #4d4d4d; /* sombreado al texto con las propiedades de posicion horizontal, posicion vertical, radio de extensión y color */
+}
+
+@media (max-width: 768px) {
+    .columnas {
+        flex-direction: column; /* Cambia a una columna en pantallas más pequeñas */
+    }
+
+    .columna {
+        margin: 10px 0; /* Espacio vertical en pantallas pequeñas */
+    }
+}
+
+ /* Estilo del boton */
+#myBtn {
+    position: fixed; /* Posicion del boton */
+    bottom: 20px; /* Tamaño del boton */
+    float: right; /* Ubicacion donde flota el boton */
+    right: 5%; /* Ubicacion en la pagina con respectgo al costado derecho */
+    left: 95%; /* Ubicacion en la pagina con respectgo al costado Izquierdo */
+    max-width: 80px; /* Tamaño maximo del boton */
+    width: 100%;  /* porcentage de ancho del boton */
+    font-size: 10px; /* Tamaño del texto dentro del boton */
+    border-color: #363636; /* Color del borde */
+    background-color: #404d404b ; /* Color del boton */
+    padding: 10px; /* Configura el relleno en el contenedor */
+    border-radius: 4px;  /* radio del borde*/
+
+}
